@@ -1,0 +1,173 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>
+			NIC Mexico Entry	
+	</title>
+
+</head>
+<body>
+
+	<main>
+		<label for="submitInput">
+    		<input  class="gafete" type="submit" value="Colaboradores Tec" id="colaboradoresTec"/>
+    	</label>
+    	<label for="submitInput">
+    		<input  class="gafete" type="submit" value="Olvido Tarjeta" id="olvidoTarjeta"/>
+    	</label>
+    	<label for="submitInput">
+    		<input  class="gafete" type="submit" value="Registro Menores" id="registroMenores"/>
+    	</label>
+    	<label for="submitInput">
+    		<input  class="gafete" type="submit" value="Visita General" id="visitaGeneral"/>
+    	</label>
+
+    	<form class="colab">
+			<fieldset>
+				<legend>
+					Colaboradores Tec
+				</legend>
+
+				<label for="textInput">
+					<div><p>Nombre Completo</p></div>
+				<input type ="text" class="formElement" id="nombreColab" required/>
+				<div></div>
+				</label>
+				<label for="textInput">
+					<div><p>Empresa visitante</p></div>
+				<input type ="text" class="formElement" id="empresaColab" required/>
+				</label>
+				<label for="textInput" required>
+					<div><p>Aviso de Privacidad</p></div>
+					<input type="checkbox" id="privacidadColab" required>He leído y estoy de acuerdo
+				</label>
+				<label for="textInput" required>
+					<div><p>Politica de Seguridad</p></div>
+					<input type="checkbox" id="seguridadColab" required>He leído y estoy de acuerdo
+
+				</label>
+
+				<p></p>
+				<label for="submitInput">
+    				<input  class="submitColab" type="submit" value="Enviar"/>
+    			</label>
+				
+			</fieldset>
+		</form>
+
+    	<form class="olvido">
+			<fieldset>
+				<legend>
+					Olvido de Acceso
+				</legend>
+
+				<label for="textInput">
+					<div><p>Nómina</p></div>
+				<input type ="text" class="formElement" id="nomina" required/>
+				<p></p>
+
+				<label for="submitInput">
+    				<input  class="submitNomina" type="submit" value="Enviar"/>
+    			</label>
+				
+			</fieldset>
+		</form>
+
+    	<form class="menores">
+			<fieldset>
+				<legend>
+					Registro de menores
+				</legend>
+
+				<label for="textInput">
+					<div><p>Nombre Completo</p></div>
+				<input type ="text" class="formElement" id="nombreMenor" required/>
+				<div></div>
+				</label>
+				<label for="textInput">
+					<div><p>Responsable</p></div>
+				<input type ="text" class="formElement" id="responsableMenor" required/>
+				</label>
+				<label for="textInput">
+					<div><p>Aviso de Privacidad</p></div>
+					<input type="checkbox" id="privacidadMenor" required>He leído y estoy de acuerdo
+				</label>
+				<label for="textInput">
+					<div><p>Politica de Seguridad</p></div>
+					<input type="checkbox" id="seguridadMenor" required>He leído y estoy de acuerdo
+				</label>
+				<label for="textInput">
+					<div><p>Suscrito</p></div>
+				<input type ="text" class="formElement" id="suscrito" required/>
+				</label>
+				<p></p>
+
+				<label for="submitInput">
+    				<input  class="submitMenor" type="submit" value="Enviar"/>
+    			</label>
+				
+			</fieldset>
+		</form>
+
+    	<form class="visita">
+			<fieldset>
+				<legend>
+					Registro de Visita
+				</legend>
+
+				<p>¿Cuentas con una cita?</p>
+				<section id="citaForm" >
+					<input type="radio" id="citaSi" name="opcion" value="si" required>Si
+					<div></div>
+					<input type="radio" id="citaNo" name="opcion" value="no" required>No
+				</section>
+
+				<section id="correo">
+					<label for="textInput">
+					<div><p>Ingresa el correo de la cita</p></div>
+					<input type ="text" class="formElement" id="correoCita" />
+				</section>
+
+				<section id="sinCita">
+					<label for="textInput">
+						<div><p>Nombre Completo</p></div>
+					<input type ="text" class="formElement" id="nombreVisita" required/>
+					<div></div>
+					</label>
+					<label for="textInput">
+						<div><p>Responsable de visita</p></div>
+					<input type ="text" class="formElement" id="responsableVisita" required/>
+					</label>
+					<p>Motivo de la visita</p>
+					<form id="motivo"required>
+						<input type="radio" id="motivoJunta" name="opcion3" required>Junta con personal
+						<div></div>
+						<input type="radio" id="motivoProveedor" name="opcion4" required>Proveedor de Servicios
+						<div></div>
+						<input type="radio" id="motivoPersonal" name="opcion5" required>Personal
+					</form>
+					<label for="textInput">
+						<div><p>Aviso de Privacidad</p></div>
+						<input type="radio" id="privacidadVisita" required>He leído y estoy de acuerdo
+					</label>
+					<label for="textInput">
+						<div><p>Politica de Seguridad</p></div>
+						<input type="radio" id="seguridadVisita" required>He leído y estoy de acuerdo
+					</label>
+
+				</section>
+				<p></p>
+
+				<label for="submitInput">
+    				<input  class="submit" type="submit" value="Enviar"/>
+    			</label>
+				
+			</fieldset>
+		</form>
+
+	</main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
