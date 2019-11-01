@@ -77,7 +77,7 @@ function watchForm(){
 				hora : hora
 			};
 		addVisitor(data);
-		console.log(data);
+		alert('Visita Registrada');
 		window.open('./index.html','_self');
 
 	});
@@ -99,7 +99,7 @@ function watchForm(){
 				hora : hora
 			};
 		addVisitor(data);
-		console.log(data);
+		alert('Visita Registrada');
 		window.open('./index.html','_self');
 
 	});
@@ -131,7 +131,7 @@ function watchForm(){
 				hora : hora
 			};
 		addVisitor(data);
-		console.log(data);
+		alert('Visita Registrada');
 		window.open('./index.html','_self');
 
 	});
@@ -164,7 +164,6 @@ function addVisitor(data){
 				}
 			})
 			.then(responseJSON =>{
-				alert('exito');
 				
 			})
 			.catch(err => {
