@@ -6,7 +6,8 @@ let visitorSchema = mongoose.Schema({
 	nombreCompleto : {type : String, required : true},
 	personaVisitar : String,
 	motivo : String,
-	empresa : String
+	empresa : String,
+	hora : String
 });
 
 visitorSchema.index({'$**' : 'text'});

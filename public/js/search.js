@@ -6,8 +6,14 @@ function watchForm(){
 	$('.submitButton').on('click',function(event){
 		event.preventDefault();
 		let searchTerm = $('.searchBox').val();
-
-		let url = `./nic-api/visit/search/${searchTerm}`;
+		console.log(searchTerm);
+		let url;
+		if(searchTerm != ''){
+			url = `./nic-api/visit/search/${searchTerm}`;
+		}
+		else{
+			url =`./nic-api/visit`;
+		}
 
 		let settings = {
 						method : 'GET',
@@ -54,6 +60,9 @@ function displayResults(data){
 									</div>
 									<div>
 										Empresa : ${data[i].empresa}
+									</div>
+									<div>
+										Hora : ${data[i].hora}
 									</div>
 									
 								</fieldset>

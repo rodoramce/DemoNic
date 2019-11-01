@@ -66,13 +66,15 @@ function watchForm(){
 		let id = Math.floor(Math.random()*1000);
 		let motivo = "Colaborador Tec";
 		let responsable = "Colaborador Tec";
+		let hora = Date($.now());
 
 		let data = {
 				idCard : id,
 				nombreCompleto : nombre,
 				personaVisitar : responsable,
 				motivo : motivo,
-				empresa : empresa
+				empresa : empresa,
+				hora : hora
 			};
 		addVisitor(data);
 		console.log(data);
@@ -85,14 +87,16 @@ function watchForm(){
 		let empresa = "NA";
 		let id = Math.floor(Math.random()*1000);
 		let motivo = "Registro Menor";
-		let responsable = $('#responsableMenor').val();;
+		let responsable = $('#responsableMenor').val();
+		let hora = Date($.now());
 
 		let data = {
 				idCard : id,
 				nombreCompleto : nombre,
 				personaVisitar : responsable,
 				motivo : motivo,
-				empresa : empresa
+				empresa : empresa,
+				hora : hora
 			};
 		addVisitor(data);
 		console.log(data);
@@ -116,13 +120,15 @@ function watchForm(){
 		let id = Math.floor(Math.random()*1000);
 		let motivo = $("input[name='motivo']:checked").val();
 		let responsable = $('#responsableVisita').val();
+		let hora = Date($.now());
 
 		let data = {
 				idCard : id,
 				nombreCompleto : nombre,
 				personaVisitar : responsable,
 				motivo : motivo,
-				empresa : empresa
+				empresa : empresa,
+				hora : hora
 			};
 		addVisitor(data);
 		console.log(data);
