@@ -21,6 +21,9 @@
     	<label for="submitInput">
     		<input  class="gafete" type="submit" value="Visita General" id="visitaGeneral"/>
     	</label>
+    	<label for="submitInput">
+    		<input  class="gafete" type="submit" value="Busqueda" id="Busqueda"/>
+    	</label>
 
     	<form class="colab">
 			<fieldset>
@@ -109,53 +112,63 @@
 			</fieldset>
 		</form>
 
+		<form class="citaForm" >
+			<p>¿Cuentas con una cita?</p>
+			<label for="submitInput">
+    			<input  class="citaSi" type="button" value="Si"/>
+    		</label>
+    		<div></div>
+	    	<label>
+	    		<input  class="citaNo" type="button" value="No"/>
+	    	</label>
+		</form>
+
+		<form class="correoCita">
+			<label for="textInput">
+			<div><p>Ingresa el correo de la cita</p></div>
+			<input type ="text" class="formElement" id="correoCita" />
+			<label for="submitInput">
+				<input  class="submitCita" type="submit" value="Enviar"/>
+			</label>
+			</label>
+		</form>
+
     	<form class="visita">
 			<fieldset>
 				<legend>
 					Registro de Visita
 				</legend>
-
-				<p>¿Cuentas con una cita?</p>
-				<section id="citaForm" >
-					<input type="radio" id="citaSi" name="opcion" value="si" required>Si
+				
+				<label for="textInput">
+					<div><p>Nombre Completo</p></div>
+				<input type ="text" class="formElement" id="nombreVisita" required/>
+				<div></div>
+				</label>
+				<label for="textInput">
+					<div><p>Responsable de visita</p></div>
+				<input type ="text" class="formElement" id="responsableVisita" required/>
+				</label>
+				<label for="textInput">
+					<div><p>Empresa</p></div>
+				<input type ="text" class="formElement" id="empresaVisita" required/>
+				</label>
+				<p>Motivo de la visita</p>
+				<form id="motivo"required>
+					<input type="radio" id="motivoJunta" name="motivo" value="Junta con personal" required>Junta con personal
 					<div></div>
-					<input type="radio" id="citaNo" name="opcion" value="no" required>No
-				</section>
-
-				<section id="correo">
-					<label for="textInput">
-					<div><p>Ingresa el correo de la cita</p></div>
-					<input type ="text" class="formElement" id="correoCita" />
-				</section>
-
-				<section id="sinCita">
-					<label for="textInput">
-						<div><p>Nombre Completo</p></div>
-					<input type ="text" class="formElement" id="nombreVisita" required/>
+					<input type="radio" id="motivoProveedor" name="motivo" value="Proveedor de Servicios" required>Proveedor de Servicios
 					<div></div>
-					</label>
-					<label for="textInput">
-						<div><p>Responsable de visita</p></div>
-					<input type ="text" class="formElement" id="responsableVisita" required/>
-					</label>
-					<p>Motivo de la visita</p>
-					<form id="motivo"required>
-						<input type="radio" id="motivoJunta" name="opcion3" required>Junta con personal
-						<div></div>
-						<input type="radio" id="motivoProveedor" name="opcion4" required>Proveedor de Servicios
-						<div></div>
-						<input type="radio" id="motivoPersonal" name="opcion5" required>Personal
-					</form>
-					<label for="textInput">
-						<div><p>Aviso de Privacidad</p></div>
-						<input type="radio" id="privacidadVisita" required>He leído y estoy de acuerdo
-					</label>
-					<label for="textInput">
-						<div><p>Politica de Seguridad</p></div>
-						<input type="radio" id="seguridadVisita" required>He leído y estoy de acuerdo
-					</label>
-
-				</section>
+					<input type="radio" id="motivoPersonal" name="motivo" value="Personal" required>Personal
+				</form>
+				<label for="textInput">
+					<div><p>Aviso de Privacidad</p></div>
+					<input type="checkbox" id="privacidadVisita" required>He leído y estoy de acuerdo
+				</label>
+				<label for="textInput">
+					<div><p>Politica de Seguridad</p></div>
+					<input type="checkbox" id="seguridadVisita" required>He leído y estoy de acuerdo
+				</label>
+			
 				<p></p>
 
 				<label for="submitInput">
@@ -167,7 +180,7 @@
 
 	</main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
 
 </html>
