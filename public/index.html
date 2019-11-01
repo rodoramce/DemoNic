@@ -1,31 +1,36 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>
-			NIC Mexico Entry	
-	</title>
-	<link rel="stylesheet" type="text/css" href="./css/index.css">
 
+	<title>			NIC Mexico Entry	</title>
+	<link rel="stylesheet" href="./css/index.css"/>
+	
 </head>
+	<header>
+		<div class="banner"><img  class="nic-logo" src="https://www.nicmexico.mx/wp-content/uploads/2018/09/favicon.png"/></div>
+	</header>
 <body>
 
 	<main>
-		<label for="submitInput">
-    		<input  class="gafete" type="submit" value="Colaboradores Tec" id="colaboradoresTec"/>
-    	</label>
-    	<label for="submitInput">
-    		<input  class="gafete" type="submit" value="Olvido Tarjeta" id="olvidoTarjeta"/>
-    	</label>
-    	<label for="submitInput">
-    		<input  class="gafete" type="submit" value="Registro Menores" id="registroMenores"/>
-    	</label>
-    	<label for="submitInput">
-    		<input  class="gafete" type="submit" value="Visita General" id="visitaGeneral"/>
-    	</label>
-    	<label for="submitInput">
-    		<input  class="gafete" type="submit" value="Busqueda" id="Busqueda"/>
-    	</label>
+		<nav>
 
+			<label for="submitInput">
+				<input  class="gafete" type="submit" value="Colaboradores Tec" id="colaboradoresTec"/>
+			</label>
+			<label for="submitInput">
+				<input  class="gafete" type="submit" value="Olvido Tarjeta" id="olvidoTarjeta"/>
+			</label>
+			<label for="submitInput">
+				<input  class="gafete" type="submit" value="Registro Menores" id="registroMenores"/>
+			</label>
+			<label for="submitInput">
+				<input  class="gafete" type="submit" value="Visita General" id="visitaGeneral"/>
+			</label>
+			<label for="submitInput">
+				<input  class="gafete" type="submit" value="Busqueda" id="Busqueda"/>
+			</label>
+		</nav>
+			
     	<form class="colab">
 			<fieldset>
 				<legend>
@@ -33,21 +38,21 @@
 				</legend>
 
 				<label for="textInput">
-					<h3>Nombre Completo</h3>
+					<div><p>Nombre Completo</p></div>
 				<input type ="text" class="formElement" id="nombreColab" required/>
 				<div></div>
 				</label>
 				<label for="textInput">
-					<h3>Empresa visitante</h3>
+					<div><p>Empresa visitante</p></div>
 				<input type ="text" class="formElement" id="empresaColab" required/>
 				</label>
 				<label for="textInput" required>
-					<h3>Aviso de Privacidad</h3>
-					<input type="checkbox" id="privacidadColab" class="round" required>He leído y estoy de acuerdo
+					<div><p>Aviso de Privacidad</p></div>
+					<input type="checkbox" id="privacidadColab" required>He leído y estoy de acuerdo
 				</label>
 				<label for="textInput" required>
-					<h3>Politica de Seguridad</h3>
-					<input type="checkbox" id="seguridadColab" class="round" required>He leído y estoy de acuerdo
+					<div><p>Politica de Seguridad</p></div>
+					<input type="checkbox" id="seguridadColab" required>He leído y estoy de acuerdo
 
 				</label>
 
@@ -66,8 +71,9 @@
 				</legend>
 
 				<label for="textInput">
-					<div><h3>Nómina</h3></div>
+					<div><p>Nómina</p></div>
 				<input type ="text" class="formElement" id="nomina" required/>
+				<p></p>
 
 				<label for="submitInput">
     				<input  class="submitNomina" type="submit" value="Enviar"/>
@@ -83,24 +89,24 @@
 				</legend>
 
 				<label for="textInput">
-					<div><h3>Nombre Completo</h3></div>
+					<div><p>Nombre Completo</p></div>
 				<input type ="text" class="formElement" id="nombreMenor" required/>
 				<div></div>
 				</label>
 				<label for="textInput">
-					<div><h3>Responsable</h3></div>
+					<div><p>Responsable</p></div>
 				<input type ="text" class="formElement" id="responsableMenor" required/>
 				</label>
 				<label for="textInput">
-					<div><h3>Aviso de Privacidad</h3></div>
-					<input type="checkbox" id="privacidadMenor" class="round" required>He leído y estoy de acuerdo
+					<div><p>Aviso de Privacidad</p></div>
+					<input type="checkbox" id="privacidadMenor" required>He leído y estoy de acuerdo
 				</label>
 				<label for="textInput">
-					<div><h3>Politica de Seguridad</h3></div>
-					<input type="checkbox" id="seguridadMenor" class="round" required>He leído y estoy de acuerdo
+					<div><p>Politica de Seguridad</p></div>
+					<input type="checkbox" id="seguridadMenor" required>He leído y estoy de acuerdo
 				</label>
 				<label for="textInput">
-					<div><h3>Suscrito</h3></div>
+					<div><p>Suscrito</p></div>
 				<input type ="text" class="formElement" id="suscrito" required/>
 				</label>
 				<p></p>
@@ -113,7 +119,7 @@
 		</form>
 
 		<form class="citaForm" >
-			<h3>¿Cuentas con una cita?</h3>
+			<p>¿Cuentas con una cita?</p>
 			<label for="submitInput">
     			<input  class="citaSi" type="button" value="Si"/>
     		</label>
@@ -124,7 +130,7 @@
 
 		<form class="correoCita">
 			<label for="textInput">
-			<div><h3>Ingresa el correo de la cita</h3></div>
+			<div><p>Ingresa el correo de la cita</p></div>
 			<input type ="text" class="formElement" id="correoCita" />
 			<label for="submitInput">
 				<input  class="submitCita" type="submit" value="Enviar"/>
@@ -139,19 +145,19 @@
 				</legend>
 				
 				<label for="textInput">
-					<div><h3>Nombre Completo</h3></div>
+					<div><p>Nombre Completo</p></div>
 				<input type ="text" class="formElement" id="nombreVisita" required/>
 				<div></div>
 				</label>
 				<label for="textInput">
-					<div><h3>Responsable de visita</h3></div>
+					<div><p>Responsable de visita</p></div>
 				<input type ="text" class="formElement" id="responsableVisita" required/>
 				</label>
 				<label for="textInput">
-					<div><h3>Empresa</h3></div>
+					<div><p>Empresa</p></div>
 				<input type ="text" class="formElement" id="empresaVisita" required/>
 				</label>
-				<h3>Motivo de la visita</h3>
+				<p>Motivo de la visita</p>
 				<form id="motivo"required>
 					<input type="radio" id="motivoJunta" name="motivo" value="Junta con personal" required>Junta con personal
 					<div></div>
@@ -160,12 +166,12 @@
 					<input type="radio" id="motivoPersonal" name="motivo" value="Personal" required>Personal
 				</form>
 				<label for="textInput">
-					<div><h3>Aviso de Privacidad</h3></div>
-					<input type="checkbox" id="privacidadVisita" class="round" required>He leído y estoy de acuerdo
+					<div><p>Aviso de Privacidad</p></div>
+					<input type="checkbox" id="privacidadVisita" required>He leído y estoy de acuerdo
 				</label>
 				<label for="textInput">
-					<div><h3>Politica de Seguridad</h3></div>
-					<input type="checkbox" id="seguridadVisita" class="round" required>He leído y estoy de acuerdo
+					<div><p>Politica de Seguridad</p></div>
+					<input type="checkbox" id="seguridadVisita" required>He leído y estoy de acuerdo
 				</label>
 			
 				<p></p>
